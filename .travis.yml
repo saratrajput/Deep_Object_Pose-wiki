@@ -1,0 +1,11 @@
+script:
+- |
+    git config user.name "saratrajput"
+    git config user.email "pattarsuraj@gmail.com"
+    git remote remove origin https://$GITHUB_API_KEY@github.com/NVlabs/Deep_Object_Pose.wiki.git > /dev/null 2>&1
+    git remote add upstream https://$GITHUB_API_KEY@github.com/saratrajput/Deep_Object_Pose-wiki.git > /dev/null 2>&1
+    git fetch origin
+    git fetch upstream
+    git merge upstream/master --no-edit
+    git push origin HEAD:master > /dev/null 2>&1
+    git push upstream HEAD:master > /dev/null 2>&1
