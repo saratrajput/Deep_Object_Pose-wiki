@@ -1,11 +1,14 @@
 script:
 - |
-    git config user.name "Suraj Pattar"
-    git config user.email "pattarsuraj@gmail.com"
-    git remote remove origin https://$GITHUB_API_KEY@github.com/NVlabs/Deep_Object_Pose.wiki.git > /dev/null 2>&1
-    git remote add upstream https://$GITHUB_API_KEY@github.com/saratrajput/Deep_Object_Pose-wiki.git > /dev/null 2>&1
-    git fetch origin
-    git fetch upstream
-    git merge upstream/master --no-edit
-    git push origin HEAD:master > /dev/null 2>&1
-    git push upstream HEAD:master > /dev/null 2>&1
+  git config user.name "saratrajput"
+  git config user.email "pattarsuraj@gmail.com"
+  git remote remove origin https://$GITHUB_API_KEY@github.com/NVlabs/Deep_Object_Pose.wiki.git > /dev/null 2>&1
+  git remote add upstream https://$GITHUB_API_KEY@github.com/saratrajput/Deep_Object_Pose-wiki.git > /dev/null 2>&1
+  git fetch origin
+  git fetch upstream
+  git merge upstream/master --no-edit
+  git push origin HEAD:master > /dev/null 2>&1
+  git push upstream HEAD:master > /dev/null 2>&1
+env:
+  matrix:
+    secure: kpyuBRZUH4C35lavUAEC1KRDX3V+KFrR6B/dGAwvxRvLlTFuFaGJg8AYgja19TOKv2F/+kwmn0Z6rDciT3V2ZS6nYPKzsxH761Wu5zBHbR4h2+kWVICebWwUO3/tvo4tawDYO6E2JKPsnjgr0GAQM5aMQ7n6S3JZGkMVza89at9ei5JgrKp4CeqmOTulF2JoqwKs887krD0LglKBkgSOhkmZjJMOFMwXHg1gdu4OXb5XEqnpHKqvfMx3dpf6cbkXF4UfIPKIUXLKDzgo9TRj+eafAS00YltRz5B3kOaJngGeAycc+TakfaP3mEQs+OnxAa/aCKPzt8wsP3t12AESTyI2B8Hioo3mBusus4PkYbzwDn52e2SGqRpXE9uGIh6f3y8Q/8qUfzq2QWy7FXHNtSBOX6GfYYrueANhOASZSwRo6Bq1h2lOCg9rP5Fu6md9L33HozYoDD0Sj7Hs9z8hAXiF2JPwqSmjKsNhlkV1S4CLqhu9PRPAnPQmjTIqxAtYG70AUMlTm2juVmjwBcMaAGzlnrGqUwa9buqGzvruMGOIGiF6PfqB87GkDT6iLB+E+ToUJZpLmjGjLO+0u733DJfo8tEvBsdRn86TumUyzC0jcaQ8vZf78suNITls3Sx3BaPfm7+fyb382EebswooA4zdlgXBetK8vPXDAg0Na4c=
