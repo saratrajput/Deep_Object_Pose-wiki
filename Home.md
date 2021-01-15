@@ -7,6 +7,8 @@ Use [NDDS](https://github.com/NVIDIA/Dataset_Synthesizer) to create your synthet
 - 3d model of your object. (_You can use blender for example_)
 - Export your model in FBX format (_recommended_) to UE4.
 
+*NOTE: DOPE doesn't use depth or segmentation images. Only RGB images are needed.*
+
 ## Steps:
 * Create a domain randomization with scene with your object being exported.
 * Generate around 20k images (*should be enough*).
